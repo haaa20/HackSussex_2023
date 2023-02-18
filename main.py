@@ -1,12 +1,7 @@
 import pygame
 
-main_screen = pygame.display.set_mode([800, 600])
-running = True
+from app_class import *
 
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-        #hi
-
-
+if __name__ == '__main__':
+    app = App()
+    app.run()
